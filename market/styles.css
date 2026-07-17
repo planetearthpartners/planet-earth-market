@@ -74,7 +74,26 @@ a.cta-line.primary{color:var(--accent);border-bottom-color:var(--accent);}
 
 .impact{margin-top:10px;display:flex;flex-direction:column;gap:5px;}
 .impact-row{display:flex;align-items:center;gap:8px;}
-.impact-row .ilabel{width:98px;flex-shrink:0;font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft);cursor:help;border-bottom:1px dotted var(--line);}
+.impact-row .ilabel{position:relative;width:98px;flex-shrink:0;font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft);cursor:help;border-bottom:1px dotted var(--line);}
+.impact-row .ilabel:hover::after{
+  content:attr(data-tip);
+  position:absolute;
+  left:0;
+  top:calc(100% + 8px);
+  width:200px;
+  background:var(--ink);
+  color:#fff;
+  font-size:11px;
+  font-weight:400;
+  text-transform:none;
+  letter-spacing:normal;
+  line-height:1.45;
+  padding:9px 11px;
+  border-radius:2px;
+  z-index:30;
+  white-space:normal;
+  pointer-events:none;
+}
 .impact-dots{display:flex;gap:3px;}
 .impact-key{font-size:10.5px;color:var(--ink-soft);border-bottom:1px solid var(--line);margin-top:4px;align-self:flex-start;}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--line);display:block;}
