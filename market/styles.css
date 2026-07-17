@@ -74,8 +74,9 @@ a.cta-line.primary{color:var(--accent);border-bottom-color:var(--accent);}
 
 .impact{margin-top:10px;display:flex;flex-direction:column;gap:5px;}
 .impact-row{display:flex;align-items:center;gap:8px;}
-.impact-row .ilabel{width:98px;flex-shrink:0;font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft);}
+.impact-row .ilabel{width:98px;flex-shrink:0;font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft);cursor:help;border-bottom:1px dotted var(--line);}
 .impact-dots{display:flex;gap:3px;}
+.impact-key{font-size:10.5px;color:var(--ink-soft);border-bottom:1px solid var(--line);margin-top:4px;align-self:flex-start;}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--line);display:block;}
 .dot.filled{background:var(--good);}
 
