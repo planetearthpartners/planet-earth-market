@@ -106,6 +106,19 @@ a.cta-line.primary{color:var(--accent);border-bottom-color:var(--accent);}
 .newsletter-form input{padding:12px 14px;border:none;font-size:13.5px;width:220px;font-family:Arial,sans-serif;}
 .newsletter-form a{padding:12px 20px;}
 
+/* HubSpot embed override: force the email + submit into one long rectangular row, matching the original combined input/button shape */
+.newsletter-form{padding:0;}
+.newsletter-form .hs-form-frame{width:100%;}
+.newsletter-form form.hs-form{display:flex;gap:0;align-items:stretch;width:100%;}
+.newsletter-form .hs-form-field{margin:0!important;flex:1;}
+.newsletter-form .hs-form-field label{display:none!important;}
+.newsletter-form .hs-form-field .input{margin:0!important;height:100%;}
+.newsletter-form .hs-input{width:100%;height:100%;box-sizing:border-box;padding:12px 14px;border:none!important;border-radius:0!important;font-size:13.5px;font-family:Arial,sans-serif;background:#fff;}
+.newsletter-form .hs_submit{flex-shrink:0;}
+.newsletter-form .hs-submit .actions{margin:0!important;padding:0!important;height:100%;}
+.newsletter-form input.hs-button{height:100%;padding:12px 20px;border:none!important;border-radius:0!important;background:var(--accent)!important;color:#fff!important;font-family:Arial,sans-serif;font-size:14px;cursor:pointer;}
+.newsletter-form .hs-error-msgs{position:absolute;}
+
 footer.site{background:var(--footer);color:#cfcabd;padding:44px 0 22px;margin-top:40px;}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.14);}
 .footer-grid h5{color:#fff;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;font-weight:800;}
